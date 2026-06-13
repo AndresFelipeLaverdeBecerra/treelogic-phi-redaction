@@ -1,0 +1,41 @@
+modelo:
+  pesos: models/best.pt
+  tamano_entrada: 960
+  confianza_minima_yolo: 0.001
+  iou_nms_yolo: 0.70
+
+clases:
+  0: name
+  1: id
+  2: age
+  3: date
+  4: time
+
+umbrales_por_clase:
+  name: 0.075
+  id: 0.030
+  age: 0.075
+  date: 0.045
+  time: 0.015
+
+postproceso:
+  padding_seguridad:
+    activo: true
+    fraccion_x: 0.004
+    fraccion_y: 0.002
+
+  ajuste_vertical_por_caja_original:
+    activo: true
+    factor_altura: 1.45
+    margen_pixeles: 4.0
+
+  ajuste_vertical_por_vecinos:
+    activo: true
+    factor_altura_original: 1.35
+    factor_mediana_vecinos: 1.20
+    margen_pixeles: 3.0
+
+  supresion_duplicados_cercanos:
+    activo: true
+    distancia_centros_normalizada: 0.020
+    razon_score: 0.35
