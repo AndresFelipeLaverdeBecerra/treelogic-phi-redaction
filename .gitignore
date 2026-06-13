@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Large model files
+models/*.pt
+models/*.pth
+models/*.onnx
+models/*.engine
+
+# Local outputs
+examples/output/*
+!examples/output/.gitkeep
+results/*.csv
+results/*.json
+results/*.png
+
+# Dataset-derived visual review cases
+docs/figures/error_cases/
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
