@@ -1,0 +1,17 @@
+name: treelogic_phi_redaction
+channels:
+  - conda-forge
+  - pytorch
+dependencies:
+  - python=3.11
+  - pip
+  - numpy
+  - pandas
+  - matplotlib
+  - pyyaml
+  - tqdm
+  - pillow
+  - scikit-learn
+  - pip:
+      - ultralytics
+      - opencv-python
