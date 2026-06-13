@@ -1,8 +1,6 @@
 # Treelogic PHI Redaction
 
-Repositorio del pipeline final para detectar y anonimizar informacion sensible en radiografias de torax.
-
-El objetivo es localizar regiones con informacion protegida del paciente y cubrirlas automaticamente para generar una imagen anonimizada.
+Este es el repositorio del pipeline final para detectar y anonimizar informacion sensible en radiografias de torax. Por ende, el objetivo es localizar regiones con informacion protegida del paciente y cubrirlas automaticamente para generar una imagen anonimizada.
 
 ## Pipeline final
 
@@ -69,7 +67,7 @@ La demo genera:
 
 ## Validacion opcional
 
-Si se tienen labels en formato YOLO:
+Con labels en formato YOLO:
 
     python scripts/validate_final_pipeline.py \
       --pesos models/best.pt \
